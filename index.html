@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AlterJS – Add missing alt-text to images through AI image recognition</title>
+
+    <style>
+      img {
+        max-width: 500px;
+      }
+      pre {
+          display: block;
+          padding: 9.5px;
+          margin: 0 0 10px;
+          color: #333;
+          word-break: break-all;
+          word-wrap: break-word;
+          background-color: #f5f5f5;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>AlterJS – Add missing alt-text to images through AI image recognition for better accessibility</h1>
+    <p>
+      AlterJS finds all images without alt-text on a website. It pipes each image through <a href="https://www.clarifai.com/">Clarifai's Image Recognition</a> and adds descriptive words to &lt;img&nbsp;alt=""&nbsp;/&gt;.
+    </p>
+
+    <pre><code>
+      &lt;!-- jQuery is required. --&gt;
+      &lt;script src="Alter.js"&gt;&lt;/script&gt;
+    </code></pre>
+
+    <img src="https://static.pexels.com/photos/195131/pexels-photo-195131.jpeg" alt="" />
+    <img src="http://mauwi.me/images/mauwi.jpg" alt="" />
+    <img src="https://static.pexels.com/photos/195161/pexels-photo-195161.jpeg" alt="" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="Alter.js"></script>
+
+  </body>
+</html>
